@@ -1,0 +1,4 @@
+INSTALL.sh is a simple script using python-compilefile to complile 
+scrabblehack.py and put it in /usr/bin for easy use
+
+No license currently. Steal it if you want. 
