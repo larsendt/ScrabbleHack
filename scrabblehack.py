@@ -19,11 +19,13 @@ def extract_by_letters(letters, dictionary):
 	flag = False
 	
 	for word in dictionary:
-		wordlist.append(word)
+		flag = True
 		for letter in letters:
-			if word.count(letter) != letters.count(letter):
-				if word in wordlist:
-					wordlist.remove(word)
+			if letters.count(letter) != word.count(letter):
+				flag = False
+				break
+		if flag == True:
+			wordlist.append(word)
 				
 	return wordlist
 		
